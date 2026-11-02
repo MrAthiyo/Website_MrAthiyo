@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#05030f">
+  <meta name="description"
+    content="Aathif Sabaahath — Mr Athiyo. Software engineering student, full-stack developer, AI enthusiast and creator from Sri Lanka.">
+  <title>Mr Athiyo — Aathif Sabaahath | Software Engineer & Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════
+     STEAM-STYLE LOADING SCREEN
+     ═══════════════════════════════════════════ -->
+  <div class="loader" id="loader">
+    <div class="loader-bg">
+      <div class="loader-orb orb-a"></div>
+      <div class="loader-orb orb-b"></div>
+      <div class="loader-grid"></div>
+    </div>
+
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="lm">M</span><span class="la">A</span>
+      </div>
+      <div class="loader-brand">MR <b>ATHIYO</b></div>
+      <div class="loader-sub">SOFTWARE ENGINEER · CREATOR · GAMER</div>
+
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+        <div class="loader-glow"></div>
+      </div>
+
+      <div class="loader-status">
+        <span id="loaderStatus">Initializing systems…</span>
+        <span id="loaderPercent">0%</span>
+      </div>
+
+      <div class="loader-tips">
+        <span class="tip-label">TIP</span>
+        <span id="loaderTip">Press any key to skip</span>
+      </div>
+    </div>
+
+    <div class="loader-corner tl"></div>
+    <div class="loader-corner tr"></div>
+    <div class="loader-corner bl"></div>
+    <div class="loader-corner br"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+     PAGE OVERLAYS
+     ═══════════════════════════════════════════ -->
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════
+     HEADER
+     ═══════════════════════════════════════════ -->
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="Mr Athiyo home">
+      <span class="brand-mark">MA</span>
+      <span class="brand-text">MR <b>ATHIYO</b></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#worlds">What I Do</a>
+      <a href="#skills">Skills</a>
+      <a href="#journey">Journey</a>
+      <a href="#vlog">Vlog</a>
+      <a href="#work">Projects</a>
+      <a class="nav-cta" href="#connect">Let's Talk ↗</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid-floor"></div>
+        <div class="glow g1"></div>
+        <div class="glow g2"></div>
+        <div class="glow g3"></div>
+        <div class="stars"></div>
+        <div class="scanlines"></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal="up">
+            <span class="dot"></span> SRI LANKA · SOFTWARE ENGINEERING STUDENT
+          </p>
+
+          <h1 class="hero-title">
+            <span class="l1" data-reveal="up" style="--d:80ms">HEY, I'M</span>
+            <span class="l2" data-reveal="up" style="--d:160ms">AATHIF<span class="dot-accent">.</span></span>
+            <span class="l3" data-reveal="up" style="--d:240ms">I BUILD THINGS.</span>
+          </h1>
+
+          <p class="hero-lede" data-reveal="up" style="--d:330ms">
+            Software engineering student, full-stack developer and the creator behind
+            <b>Mr Athiyo</b>. I turn curiosity into code — and ideas into experiences.
+          </p>
+
+          <div class="hero-actions" data-reveal="up" style="--d:420ms">
+            <a class="btn btn-primary magnetic" href="#work"><span>Explore my work</span><i>↘</i></a>
+            <a class="btn btn-ghost magnetic" href="#vlog"><span>Watch my vlog</span><i>▶</i></a>
+          </div>
+
+          <div class="hero-tags" data-reveal="up" style="--d:510ms">
+            <span>Software Engineering</span><i></i>
+            <span>AI &amp; Technology</span><i></i>
+            <span>Creative Development</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal="zoom" style="--d:220ms">
+          <div class="hero-parallax" data-parallax="0.10">
+            <div class="avatar-stage">
+              <div class="avatar-glow"></div>
+              <div class="ring ring-1"></div>
+              <div class="ring ring-2"></div>
+              <div class="ring ring-3"></div>
+              <img class="avatar-3d" src="assets/3d.png" alt="Aathif — 3D character">
+              <div class="chip chip-1">⌁ CREATOR MODE</div>
+              <div class="chip chip-2">&lt;/&gt; ALWAYS BUILDING</div>
+              <div class="chip chip-3">✳ AI + CODE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about"><span class="mouse"><i></i></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <!-- ═══════════ MARQUEE ═══════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>SOFTWARE ENGINEERING</span><b>✦</b>
+        <span>ARTIFICIAL INTELLIGENCE</span><b>✦</b>
+        <span>FULL-STACK DEVELOPMENT</span><b>✦</b>
+        <span>GAMING</span><b>✦</b>
+        <span>CONTENT CREATION</span><b>✦</b>
+        <span>SYSTEMS &amp; DATABASES</span><b>✦</b>
+        <span>SOFTWARE ENGINEERING</span><b>✦</b>
+        <span>ARTIFICIAL INTELLIGENCE</span><b>✦</b>
+        <span>FULL-STACK DEVELOPMENT</span><b>✦</b>
+        <span>GAMING</span><b>✦</b>
+        <span>CONTENT CREATION</span><b>✦</b>
+        <span>SYSTEMS &amp; DATABASES</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section class="section about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-visual" data-reveal="left">
+          <div class="portrait-card tilt">
+            <img src="assets/portrait.png" alt="Mr Athiyo portrait">
+            <div class="portrait-meta"><span class="dot"></span> PLAYER ONE <small>ONLINE</small></div>
+            <div class="corner tl"></div>
+            <div class="corner br"></div>
+          </div>
+          <div class="float-badge">EST. SRI LANKA</div>
+        </div>
+
+        <div class="about-copy">
+          <p class="kicker" data-reveal="up">01 / ABOUT ME</p>
+          <h2 class="h2" data-reveal="up" style="--d:80ms">
+            Not just playing<br>the game. <span class="grad">Building it.</span>
+          </h2>
+
+          <p data-reveal="up" style="--d:160ms">
+            I'm <b>Aathif Sabaahath</b> — a software engineering student and aspiring engineer from
+            Sri Lanka, currently pursuing a BSc (Hons) in Software Engineering at
+            <b>Java Institute</b>, affiliated with Birmingham City University, UK.
+          </p>
+          <p data-reveal="up" style="--d:240ms">
+            My journey started with a simple question: <em>how do computers actually work?</em>
+            That curiosity grew into full-stack development, artificial intelligence, database
+            systems and a creative brand called <b>Mr Athiyo</b> — where gaming, tech and
+            storytelling collide.
+          </p>
+
+          <div class="stats">
+            <div class="stat" data-reveal="up" style="--d:300ms"><b><span
+                  data-count="8">0</span></b><span>Certifications</span></div>
+            <div class="stat" data-reveal="up" style="--d:380ms"><b><span data-count="3">0</span></b><span>Projects
+                Built</span></div>
+            <div class="stat" data-reveal="up" style="--d:460ms"><b><span
+                  data-count="15">0</span><i>+</i></b><span>Technologies</span></div>
+            <div class="stat" data-reveal="up" style="--d:540ms"><b><span data-count="1">0</span></b><span>Big
+                Vision</span></div>
+          </div>
+
+          <a class="text-link magnetic" href="#connect" data-reveal="up" style="--d:600ms">Let's connect
+            <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ WORLDS ═══════════ -->
+    <section class="section worlds" id="worlds">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker" data-reveal="up">02 / MY UNIVERSE</p>
+            <h2 class="h2" data-reveal="up" style="--d:80ms">Different worlds.<br><span class="grad">One creator.</span>
+            </h2>
+          </div>
+          <p class="section-note" data-reveal="up" style="--d:160ms">
+            A little bit of everything I'm obsessed with.
+          </p>
+        </div>
+
+        <div class="world-grid">
+          <article class="world-card spot-card" data-reveal="up" style="--d:80ms">
+            <span class="card-num">01</span>
+            <div class="card-icon">&lt;/&gt;</div>
+            <h3>Software Development</h3>
+            <p>Responsive websites, applications and practical software built with modern programming technologies.</p>
+            <a href="#work">See projects <span>↗</span></a>
+          </article>
+
+          <article class="world-card spot-card" data-reveal="up" style="--d:180ms">
+            <span class="card-num">02</span>
+            <div class="card-icon">✳</div>
+            <h3>Artificial Intelligence</h3>
+            <p>Exploring AI tools, model integrations and intelligent features that make software genuinely more useful.
+            </p>
+            <a href="#connect">Talk ideas <span>↗</span></a>
+          </article>
+
+          <article class="world-card spot-card" data-reveal="up" style="--d:280ms">
+            <span class="card-num">03</span>
+            <div class="card-icon">⛁</div>
+            <h3>Systems &amp; Databases</h3>
+            <p>Working with databases, APIs, backend systems and the architecture that holds everything together.</p>
+            <a href="#skills">Explore stack <span>↗</span></a>
+          </article>
+
+          <article class="world-card spot-card" data-reveal="up" style="--d:380ms">
+            <span class="card-num">04</span>
+            <div class="card-icon">⌁</div>
+            <h3>Creative Technology</h3>
+            <p>Gaming, content creation and software development combined into engaging digital experiences.</p>
+            <a href="https://www.youtube.com/@Mr_Athiyo" target="_blank" rel="noreferrer">Watch <span>↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ SKILLS ═══════════ -->
+    <section class="section skills" id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker" data-reveal="up">03 / TECHNICAL STACK</p>
+            <h2 class="h2" data-reveal="up" style="--d:80ms">Tools I use<br><span class="grad">to build.</span></h2>
+          </div>
+          <p class="section-note" data-reveal="up" style="--d:160ms">No percentage bars — just real things I work with.
+          </p>
+        </div>
+
+        <div class="skill-grid">
+          <div class="skill-card spot-card" data-reveal="up" style="--d:60ms">
+            <h3><span>▹</span> Programming</h3>
+            <div class="tags"><i>Java</i><i>JavaScript</i><i>TypeScript</i><i>Python</i><i>PHP</i></div>
+          </div>
+          <div class="skill-card spot-card" data-reveal="up" style="--d:140ms">
+            <h3><span>▹</span> Frontend</h3>
+            <div class="tags"><i>HTML</i><i>CSS</i><i>React</i><i>Responsive UI</i></div>
+          </div>
+          <div class="skill-card spot-card" data-reveal="up" style="--d:220ms">
+            <h3><span>▹</span> Backend</h3>
+            <div class="tags"><i>Java</i><i>PHP</i><i>REST APIs</i><i>Architecture</i></div>
+          </div>
+          <div class="skill-card spot-card" data-reveal="up" style="--d:300ms">
+            <h3><span>▹</span> Databases</h3>
+            <div class="tags"><i>SQL</i><i>Database Design</i><i>Management</i></div>
+          </div>
+          <div class="skill-card spot-card" data-reveal="up" style="--d:380ms">
+            <h3><span>▹</span> AI &amp; Integrations</h3>
+            <div class="tags"><i>AI Model Integration</i><i>API Integration</i><i>Automation</i></div>
+          </div>
+          <div class="skill-card spot-card" data-reveal="up" style="--d:460ms">
+            <h3><span>▹</span> Also Into</h3>
+            <div class="tags"><i>Android</i><i>Game Dev</i><i>Cybersecurity</i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ JOURNEY ═══════════ -->
+    <section class="section journey" id="journey">
+      <div class="wrap">
+        <div class="section-head center">
+          <div>
+            <p class="kicker" data-reveal="up">04 / THE JOURNEY</p>
+            <h2 class="h2" data-reveal="up" style="--d:80ms">From curiosity<br><span class="grad">to engineering.</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="tl-item" data-reveal="left">
+            <span class="tl-dot"></span>
+            <div class="tl-card spot-card">
+              <span class="tl-step">01</span>
+              <h3>The Beginning</h3>
+              <p>My interest in computers started with a desire to understand how digital systems actually work. I began
+                exploring programming, hardware and the fundamentals of software development.</p>
+            </div>
+          </div>
+          <div class="tl-item" data-reveal="right">
+            <span class="tl-dot"></span>
+            <div class="tl-card spot-card">
+              <span class="tl-step">02</span>
+              <h3>Building the Foundation</h3>
+              <p>I developed my programming skills through self-learning, technical courses and practical projects —
+                experimenting with ideas and creating websites and applications.</p>
+            </div>
+          </div>
+          <div class="tl-item" data-reveal="left">
+            <span class="tl-dot"></span>
+            <div class="tl-card spot-card">
+              <span class="tl-step">03</span>
+              <h3>Growing as a Developer</h3>
+              <p>I started applying technical knowledge to real development work: full-stack applications, database
+                systems, API integrations and AI-powered features.</p>
+            </div>
+          </div>
+          <div class="tl-item" data-reveal="right">
+            <span class="tl-dot"></span>
+            <div class="tl-card spot-card">
+              <span class="tl-step">04</span>
+              <h3>Engineering the Future</h3>
+              <p>Today I'm continuing my software engineering degree while expanding into AI, modern development
+                technologies and growing my personal brand, Mr Athiyo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ EDUCATION + CERTS ═══════════ -->
+    <section class="section education" id="education">
+      <div class="wrap edu-grid">
+        <div class="edu-card" data-reveal="left">
+          <p class="kicker">05 / EDUCATION</p>
+          <h2 class="h2 small">BSc (Hons)<br><span class="grad">Software Engineering</span></h2>
+          <p class="edu-org">Java Institute · Affiliated with Birmingham City University, UK</p>
+          <span class="badge"><span class="dot"></span> Currently Studying</span>
+          <p class="edu-desc">My academic journey focuses on software engineering principles, programming, system
+            development and the technical knowledge required to build reliable software.</p>
+        </div>
+
+        <div class="cert-block">
+          <p class="kicker" data-reveal="up">CERTIFICATIONS</p>
+          <ul class="cert-list">
+            <li data-reveal="up" style="--d:60ms"><span>Computer Hardware</span><small>Winsys Networks · 2023</small>
+            </li>
+            <li data-reveal="up" style="--d:120ms"><span>Windows Networks</span><small>Winsys Networks · 2023</small>
+            </li>
+            <li data-reveal="up" style="--d:180ms"><span>Microsoft Certified Solutions Associate</span><small>MCSA ·
+                2024</small></li>
+            <li data-reveal="up" style="--d:240ms"><span>Cisco Certified Network Associate</span><small>CCNA ·
+                2024</small></li>
+            <li data-reveal="up" style="--d:300ms"><span>Google Analytics</span><small>Google · 2025</small></li>
+            <li data-reveal="up" style="--d:360ms"><span>Google AI-Powered Performance Ads</span><small>Google ·
+                2025</small></li>
+            <li data-reveal="up" style="--d:420ms"><span>Python Programming</span><small>Udemy · 2025</small></li>
+            <li data-reveal="up" style="--d:480ms"><span>Amazon Connect Customer Profiles
+                Fundamentals</span><small>Amazon</small></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ VLOG ═══════════ -->
+    <section class="section vlog" id="vlog">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker" data-reveal="up">06 / FIRST VLOG</p>
+            <h2 class="h2" data-reveal="up" style="--d:80ms">Welcome to<br><span class="grad">my world.</span></h2>
+          </div>
+          <p class="section-note" data-reveal="up" style="--d:160ms">
+            My very first vlog — where the story begins.
+          </p>
+        </div>
+
+        <div class="vlog-panel" data-reveal="zoom" style="--d:120ms">
+          <div class="vlog-frame">
+            <div class="vlog-corner tl"></div>
+            <div class="vlog-corner tr"></div>
+            <div class="vlog-corner bl"></div>
+            <div class="vlog-corner br"></div>
+
+            <div class="vlog-embed" id="vlogEmbed">
+              <div class="vlog-thumb" id="vlogThumb" role="button" tabindex="0" aria-label="Play first vlog">
+                <img src="https://i.ytimg.com/vi/PM4sJMe-uEg/maxresdefault.jpg" alt="Mr Athiyo — First Vlog">
+                <div class="vlog-overlay"></div>
+                <button class="play-btn" aria-label="Play video">
+                  <span>▶</span>
+                </button>
+                <div class="vlog-meta">
+                  <span class="vlog-badge">FIRST VLOG</span>
+                  <span class="vlog-title">Mr Athiyo — My First Vlog</span>
+                </div>
+                <div class="vlog-scan"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="vlog-info">
+            <div class="vlog-tag-row">
+              <span class="vlog-tag">▶ VLOG #01</span>
+              <span class="vlog-tag ghost">MR ATHIYO</span>
+              <span class="vlog-tag ghost">2025</span>
+            </div>
+            <h3>My First Vlog — The Beginning</h3>
+            <p>
+              The very first chapter of Mr Athiyo on YouTube. A raw, personal look at who I am,
+              what I build, and where this journey is heading. Hit play, subscribe, and let's
+              build something together.
+            </p>
+            <a class="btn btn-primary magnetic" href="https://youtu.be/PM4sJMe-uEg" target="_blank" rel="noreferrer">
+              <span>Watch on YouTube</span><i>↗</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ PROJECTS ═══════════ -->
+    <section class="section work" id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker" data-reveal="up">07 / SELECTED WORK</p>
+            <h2 class="h2" data-reveal="up" style="--d:80ms">Things I've<br><span class="grad">built.</span></h2>
+          </div>
+          <p class="section-note" data-reveal="up" style="--d:160ms">Projects, experiments and the brand behind it all.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card spot-card tilt" data-reveal="up" style="--d:80ms">
+            <div class="project-thumb"><span>🛒</span></div>
+            <div class="project-body">
+              <span class="project-tag">Web Application</span>
+              <h3>MuseMart</h3>
+              <p>An art-selling gallery platform focused on artwork management, seller operations and online commerce.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card spot-card tilt" data-reveal="up" style="--d:200ms">
+            <div class="project-thumb alt"><span>🐾</span></div>
+            <div class="project-body">
+              <span class="project-tag">E-Commerce</span>
+              <h3>Happy Paws Market</h3>
+              <p>An e-commerce project exploring online shopping, product management and database-driven web
+                development.</p>
+            </div>
+          </article>
+
+          <article class="project-card spot-card tilt" data-reveal="up" style="--d:320ms">
+            <div class="project-thumb alt2"><span>▶</span></div>
+            <div class="project-body">
+              <span class="project-tag">Creative Brand</span>
+              <h3>Mr Athiyo</h3>
+              <p>My creative brand where gaming, software engineering, technology and digital content come together.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="feature-panel" data-reveal="zoom" style="--d:120ms">
+          <img src="assets/banner.png" alt="Mr Athiyo neon gaming channel banner" loading="lazy">
+          <div class="feature-shade"></div>
+          <div class="feature-content">
+            <span class="feature-label">THE CHANNEL</span>
+            <h2>Welcome to<br><span class="grad">my world.</span></h2>
+            <p>Gaming, tech and the process of making cool things.</p>
+            <a class="btn btn-primary magnetic" href="https://www.youtube.com/@Mr_Athiyo" target="_blank"
+              rel="noreferrer">
+              <span>Visit Mr Athiyo</span><i>↗</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ CONNECT ═══════════ -->
+    <section class="section connect" id="connect">
+      <div class="connect-orb" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="kicker" data-reveal="up">08 / OPEN CHANNEL</p>
+        <h2 class="h2" data-reveal="up" style="--d:80ms">Let's build something<br><span class="grad">meaningful.</span>
+        </h2>
+        <p class="connect-copy" data-reveal="up" style="--d:160ms">
+          Have a project idea, a collaboration opportunity, or just want to talk about technology?
+          I'd love to hear from you. Open to learning, collaboration and new opportunities.
+        </p>
+
+        <div class="socials">
+          <a href="https://www.youtube.com/@Mr_Athiyo" target="_blank" rel="noreferrer" data-reveal="up"
+            style="--d:60ms"><span
+              class="social-symbol">▶</span><span>YouTube<small>@Mr_Athiyo</small></span><b>↗</b></a>
+          <a href="https://www.instagram.com/MrAthiyo" target="_blank" rel="noreferrer" data-reveal="up"
+            style="--d:120ms"><span
+              class="social-symbol">◎</span><span>Instagram<small>@MrAthiyo</small></span><b>↗</b></a>
+          <a href="https://www.facebook.com/MrAthiyo" target="_blank" rel="noreferrer" data-reveal="up"
+            style="--d:180ms"><span
+              class="social-symbol">f</span><span>Facebook<small>@MrAthiyo</small></span><b>↗</b></a>
+          <a href="https://github.com/MrAthiyo" target="_blank" rel="noreferrer" data-reveal="up"
+            style="--d:240ms"><span
+              class="social-symbol">&lt;/&gt;</span><span>GitHub<small>@MrAthiyo</small></span><b>↗</b></a>
+          <a href="https://discord.com" target="_blank" rel="noreferrer" data-reveal="up" style="--d:300ms"><span
+              class="social-symbol">⌁</span><span>Discord<small>MrAthiyo</small></span><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <a class="brand" href="#home">
+      <span class="brand-mark">MA</span>
+      <span class="brand-text">MR <b>ATHIYO</b></span>
+    </a>
+    <p>Made with curiosity in Sri Lanka <span>✦</span></p>
+    <a href="#home" class="back-top">BACK TO TOP ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
